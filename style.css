@@ -12,14 +12,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: auto;
+    overflow: hidden;
 
 }
 
 .calculater {
     width: 90%;
     max-width: 500px;
-    height: 505px;
+    height: auto;
+    min-height: 505px;
     background-color: rgba(61, 58, 58, 0.692);
     padding: 20px;
     border-radius: 20px;
@@ -96,4 +97,21 @@ button:active,
     background-color: rgb(46, 190, 247);
     color: white;
     box-shadow: 0 6px 0 rgb(19, 139, 187), 0 5px 10px 4px #000;
+}
+
+
+@media (max-width: 600px){
+
+    .calculater{
+        min-height: auto;
+        padding: 15px;
+    }
+
+    input{
+        height: 80px;
+    }
+
+    button{
+        height: 50px;
+    }
 }
