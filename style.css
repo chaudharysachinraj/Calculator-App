@@ -8,13 +8,15 @@
 html, body{
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 body{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .calculater {
@@ -85,6 +87,7 @@ button:active,
 #equalto:active {
     box-shadow: none;
     transform: translateY(4px);
+    border-radius: 5px;
 
 }
 
@@ -104,15 +107,18 @@ button:active,
 @media (max-width: 600px){
 
     .calculater{
-        min-height: auto;
+        width: 95%;
         padding: 15px;
+        gap: 15px;
     }
 
     input{
-        height: 80px;
+        height: 70px;
+        font-size: 35px;
     }
 
     button{
         height: 50px;
+        font-size: 18px;
     }
 }
