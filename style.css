@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculater {
+    width: 90%;
+    max-width: 500px;
+    height: 505px;
+    background-color: rgba(61, 58, 58, 0.692);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 0 0 25px 10px #353434;
+    /* background-color: aquamarine; */
+}
+
+input {
+    height: 100px;
+    width: 100%;
+    font-size: 60px;
+    text-align: right;
+    overflow-x: auto;
+    pointer-events: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    color: rgba(0, 0, 0, 0.644);
+    background-color: rgb(192, 196, 144);
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+button {
+    position: relative;
+    background-color: #8f8888;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 6px 0 #5f5d5d, 0 5px 10px 4px #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 25px;
+    transition: transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+
+button:hover,
+button:focus {
+    opacity: 0.9;
+    outline: 0;
+}
+
+button:active,
+.operator:active,
+#equalto:active {
+    box-shadow: none;
+    transform: translateY(4px);
+
+}
+
+.operator {
+    background-color: rgba(255, 94, 0, 0.904);
+    color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 6px 0 rgba(194, 73, 4, 0.904), 0 5px 10px 4px #000;
+}
+
+#equalto{
+    background-color: rgb(46, 190, 247);
+    color: white;
+    box-shadow: 0 6px 0 rgb(19, 139, 187), 0 5px 10px 4px #000;
+}
