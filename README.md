@@ -54,7 +54,7 @@ The calculator provides a clean and responsive user experience while handling co
 Add your project screenshot inside a `screenshots` folder and update the image below.
 
 ```md
-![Calculator Screenshot](screenshots/calculator.png)
+![Calculator Screenshot](./screenshots/calculator.png)
 ```
 
 ---
