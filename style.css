@@ -10,9 +10,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    /* padding: 50px; */
     /* overflow-x: hidden; */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .calculater {
@@ -109,7 +109,7 @@ button:active,
     }
     .calculater{
         width: 100%;
-       min-height:auto;
+       min-height:100%;
         padding: 15px;
         gap: 15px;
     }
@@ -117,7 +117,7 @@ button:active,
     input{
         height: 70px;
         font-size: 35px;
-        padding: 0px 5px;
+        padding: 0 5px;
     }
 
     button{
