@@ -5,27 +5,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 50px;
+    /* overflow-x: hidden; */
+    overflow-y: hidden;
 }
 
 .calculater {
     width: 90%;
     max-width: 500px;
     height: auto;
-    min-height: 505px;
+    min-height: 500px;
     background-color: rgba(61, 58, 58, 0.692);
-    padding: 20px;
+    padding: 25px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -43,18 +39,20 @@ input {
     pointer-events: none;
     border: none;
     border-radius: 10px;
-    padding: 15px 0;
+    padding: 15px 5px;
     color: rgba(0, 0, 0, 0.644);
     background-color: rgb(192, 196, 144);
 }
 
 .keys {
+    /* margin-top: 10px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     column-gap: 15px;
     box-sizing: border-box;
     position: relative;
+    margin-bottom: 10px;
 }
 
 button {
@@ -69,7 +67,7 @@ button {
     font-weight: bolder;
     height: 50px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 5px;
     font-size: 25px;
     transition: transform 0.1s ease,
@@ -106,8 +104,12 @@ button:active,
 
 @media (max-width: 600px){
 
+    body{
+        padding:20px;
+    }
     .calculater{
-        width: 95%;
+        width: 100%;
+       min-height:auto;
         padding: 15px;
         gap: 15px;
     }
@@ -115,10 +117,11 @@ button:active,
     input{
         height: 70px;
         font-size: 35px;
+        padding: 0px 5px;
     }
 
     button{
-        height: 50px;
-        font-size: 18px;
+        height: 40px;
+        font-size: 16px;
     }
 }
